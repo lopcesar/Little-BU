@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+        <%- include("partials/head", { title: "Carrito" }) %>
+    </head>
+    <body>
+        <%- include("partials/header") %>
+
+        <main>
+            <section class="cart">
+                <div class="cart-box">
+                    <h2>Mi compra</h2>
+                    <article>
+                        <p>Producto 1 - Breve descripcíon</p>
+                        <p>Producto 2 - Breve descripcíon</p>
+                        <p>Producto 3 - Breve descripcíon</p>
+
+                        <h2>Total: $$$$</h2>
+                    </article>
+                </div>
+                <div class="cart-box2">
+                    <form class="username" action="/" method="POST">
+                        <p><label for="usuario">Ususario</label></p>
+                        <input
+                            type="text"
+                            id="usuario"
+                            name="Ususario"
+                            placeholder="Ususario"
+                        />
+                        <p><label for="">Dirección</label></p>
+                        <input
+                            type="text"
+                            id="Dirección"
+                            name="Dirección"
+                            placeholder="Dirección"
+                        />
+                    </form>
+                </div>
+            </section>
+        </main>
+      <%- include("partials/footer") %>
+  </body>
+</html>

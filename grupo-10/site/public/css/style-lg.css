@@ -1,0 +1,11 @@
+@media (min-width: 992px) {
+    main > section > div > article {
+        width: 20%;
+        margin: auto;
+    }
+
+    .lg-flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

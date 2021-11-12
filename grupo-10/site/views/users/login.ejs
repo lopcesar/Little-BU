@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include("../partials/head", { title: "Login" }) %>
+        <script src="../../public/js/validate-login.js"></script>
+    </head>
+    <body>
+        <%- include("../partials/header") %>
+
+        <main class="reg-log">
+            <h2 class="reg-log-box">Inicia Sesíon</h2>
+
+            <form id="login-form" action="/users" method="POST">
+                <div class="reg-log-box">
+                    <p><label for="user">Email</label></p>
+                    <input
+                        type="text"
+                        id="email"
+                        name="email"
+                        placeholder="Ingrese su E-mail"
+                    />
+
+                    <p><label for="password">Contraseña</label></p>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Ingrese su Contraseña"
+                    />
+                    <div class="row">
+                        <label for="">Recordarme</label>
+                        <input type="checkbox" name="recordame" />
+                    </div>
+
+                    <p><button type="submit" value="Entrar">Entrar</button></p>
+                </div>
+            </form>
+        </main>
+        <%- include("../partials/footer") %>
+    </body>
+</html>

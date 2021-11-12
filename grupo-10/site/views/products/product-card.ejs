@@ -1,0 +1,21 @@
+<article>
+    <a href="/products/<%= product.id %>/detail">
+        <div class="width-100">
+            <img
+                class="width-100"
+                src="/img/products/<%= product.image %>"
+                alt="<%= product.name%> "
+            />
+            <div>
+                <p>
+                    $ <%= toThousand(product.price -
+                    (product.price*(product.discount/100))) %>
+                </p>
+                <% if (product.discount > 0) { %>
+                <p><%= product.discount %> % OFF</p>
+                <% } %>
+                <h4><%=product.name %></h4>
+            </div>
+        </div>
+    </a>
+</article>
